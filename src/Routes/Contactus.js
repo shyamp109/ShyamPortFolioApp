@@ -63,7 +63,7 @@ const Contactus = () => {
          <Fade right>
          <form ref={form} onSubmit={sendEmail}>
             <div className="relative mb-4">
-              <label for="name" className="leading-7 text-sm text-gray-200">
+              <label htmlFor="name" className="leading-7 text-sm text-gray-200">
                 Name
               </label>
               <input
@@ -77,7 +77,7 @@ const Contactus = () => {
               />
             </div>
             <div className="relative mb-4">
-              <label for="email" className="leading-7 text-sm text-gray-200">
+              <label htmlFor="email" className="leading-7 text-sm text-gray-200">
                 Email
               </label>
               <input
@@ -90,7 +90,7 @@ const Contactus = () => {
               />
             </div>
             <div className="relative mb-4">
-              <label for="message" className="leading-7 text-sm text-gray-200">
+              <label htmlFor="message" className="leading-7 text-sm text-gray-200">
                 Message
               </label>
               <textarea

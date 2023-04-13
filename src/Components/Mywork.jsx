@@ -1,14 +1,14 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+
 import { Link } from "react-router-dom";
 
-const Skills = ({ img, text1, text2 }) => {
+const Skills = ({ img, text1 }) => {
   return (
     <>
-      <div class="relative group">
-        <img class="w-full rounded-lg" src={img} alt="YourImage" />
+      <div className="relative group">
+        <img className="w-full rounded-lg" src={img} alt="YourImage" />
 
-        <div class="absolute flex flex-col justify-center items-center p-4 inset-0 bg-black hover:bg-gray-800 hover:duration-700 rounded-lg opacity-0 group-hover:opacity-95">
+        <div className="absolute flex flex-col justify-center items-center p-4 inset-0 bg-black hover:bg-gray-800 hover:duration-700 rounded-lg opacity-0 group-hover:opacity-95">
           
             <h1 className="text-blue-500 text-center text-lg sm:text-xl md:text-xl xl:text-3xl flex-wrap">
               {text1}

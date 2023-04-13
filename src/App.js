@@ -10,6 +10,7 @@ import SocialIcon from "./Components/SocialIcon";
 import Fade from "react-reveal/Fade";
 import Portfolio from "./Routes/Portfolio";
 import Skills from "./Routes/Skills";
+import ScrollToTopButton from "./Components/ScrollTop";
 export const UserContext = createContext();
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contactus />} />
         </Routes>
         <SocialIcon />
+        <ScrollToTopButton />
         <Footer />
       </div>
     </Fade>
