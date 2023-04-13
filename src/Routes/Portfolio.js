@@ -7,7 +7,7 @@ import img6 from "../Assets/images/6.jpg";
 import crypto from "../Assets/images/crypto.jpg";
 import Skills from "../Components/Mywork";
 import { Fade,  } from "react-reveal";
-import Heroimg from "../Components/Heroimg";
+
 const Portfolio = () => {
   return (
     <Fade>

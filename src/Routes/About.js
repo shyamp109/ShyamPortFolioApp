@@ -4,7 +4,7 @@ import aboutself from "../Assets/images/1680521393068.JPEG";
 import { FaHistory, FaRProject,  } from "react-icons/fa";
 
 import { Fade } from "react-reveal";
-import Heroimg from "../Components/Heroimg";
+
 const About = () => {
   return (
     <Fade bottom cascade>

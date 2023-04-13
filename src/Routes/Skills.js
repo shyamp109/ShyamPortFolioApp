@@ -9,7 +9,7 @@ import {
   FaReact,
   FaReacteurope,
 } from "react-icons/fa";
-import Heroimg from "../Components/Heroimg";
+
 const Skills = () => {
   return (
     <div id="skills"> 

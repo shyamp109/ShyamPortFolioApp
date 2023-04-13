@@ -5,7 +5,6 @@ import Project from './Portfolio'
 import Contactus from './Contactus'
 import { Fade } from 'react-reveal'
 import Skills from './Skills'
-import Heroimg from '../Components/Heroimg'
 
 
 
