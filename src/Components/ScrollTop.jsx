@@ -28,7 +28,7 @@ function ScrollToTopButton() {
     <button
       className={`${
         isVisible ? 'opacity-100' : 'opacity-0'
-      } transition-opacity duration-500 fixed bottom-12 right-10 z-50 p-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-200`}
+      } transition-opacity duration-500 fixed  bottom-5 right-5 sm:bottom-10 sm:right-10 z-50 p-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-200`}
       onClick={handleClick}
     >
       <FaArrowAltCircleUp size={24} />
