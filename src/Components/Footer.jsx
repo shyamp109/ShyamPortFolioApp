@@ -7,6 +7,7 @@ import {
   FaPhone,
   FaTwitter,
 } from "react-icons/fa";
+import ScrollToTopButton from "./ScrollTop";
 
 const Footer = () => {
   return (
@@ -42,6 +43,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/shyam-patel-a49b101a9/" ><FaLinkedin size={20} className="text-white mr-4" /></a>
           </div>
         </div>
+        <ScrollToTopButton />
       </div>
     </div>
   );

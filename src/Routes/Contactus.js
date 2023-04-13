@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from '@emailjs/browser';
 import { Fade } from "react-reveal";
+
 const Contactus = () => {
   const form = useRef();
   const [name,setName] =useState("");
@@ -108,6 +109,7 @@ const Contactus = () => {
             </button>
           </form>
          </Fade>
+        
         </div>
       </div>
     </section>

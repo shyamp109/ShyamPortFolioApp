@@ -7,11 +7,12 @@ import img6 from "../Assets/images/6.jpg";
 import crypto from "../Assets/images/crypto.jpg";
 import Skills from "../Components/Mywork";
 import { Fade,  } from "react-reveal";
+import Heroimg from "../Components/Heroimg";
 const Portfolio = () => {
   return (
     <Fade>
     <section id="portfolio">
-      
+    
       <div className="flex flex-col justify-center items-center mt-12">
         <p className="text-gray-500 text-md sm:text-lg flex-wrap ">
           My Recent Work

@@ -9,9 +9,11 @@ import {
   FaReact,
   FaReacteurope,
 } from "react-icons/fa";
+import Heroimg from "../Components/Heroimg";
 const Skills = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-16" id="">
+    <div id="skills"> 
+    <div className="flex flex-col justify-center items-center mt-16">
       <p className="text-gray-500 text-md sm:text-lg flex-wrap ">
         Areas Of Expertise
       </p>
@@ -55,6 +57,7 @@ const Skills = () => {
           </div>
         </Fade>
       </div>
+    </div>
     </div>
   );
 };
