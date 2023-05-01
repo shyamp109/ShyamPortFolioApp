@@ -9,7 +9,6 @@ const About = () => {
   return (
     <Fade bottom cascade>
     <div id="about">
-    
       <div className="flex flex-col justify-center items-center mt-16 mb-16">
         <p className="text-gray-500 text-md sm:text-lg flex-wrap">
           Get To Know
