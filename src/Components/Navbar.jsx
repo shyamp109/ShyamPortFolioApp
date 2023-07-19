@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -26,12 +26,12 @@ const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <Link
+              <NavLink
                 className={location.pathname === "/" ? "text-white" : "text-gray-400 bg-transparent"}
                 to="/"
               >
                 Home
-              </Link>
+              </NavLink>
             </ScrollLink>
           </li>
           <li className="px-4 cursor-pointer capitalize font-medium hover:text-gray-400 text-gray-200 hover:scale-105 duration-200">
@@ -42,7 +42,7 @@ const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <Link className={location.pathname === "/portfolio" ? "text-white" : "text-gray-400 bg-transparent"} to="/portfolio">Portfolio</Link>
+              <NavLink className={location.pathname === "/portfolio" ? "text-white" : "text-gray-400 bg-transparent"} to="/portfolio">Portfolio</NavLink>
             </ScrollLink>
           </li>
           <li className="px-4 cursor-pointer capitalize font-medium hover:text-gray-400 text-gray-200 hover:scale-105 duration-200">
@@ -53,7 +53,7 @@ const Navbar = () => {
               offset={-150}
               duration={500}
             >
-              <Link className={location.pathname === "/skills" ? "text-white" : "text-gray-400 bg-transparent"} to="/skills">Skills</Link>
+              <NavLink className={location.pathname === "/skills" ? "text-white" : "text-gray-400 bg-transparent"} to="/skills">Skills</NavLink>
             </ScrollLink>
           </li>
           <li className="px-4 cursor-pointer capitalize font-medium hover:text-gray-400 text-gray-200 hover:scale-105 duration-200">
@@ -64,7 +64,7 @@ const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <Link className={location.pathname === "/about" ? "text-white" : "text-gray-400 bg-transparent"} to="/about">About</Link>
+              <NavLink className={location.pathname === "/about" ? "text-white" : "text-gray-400 bg-transparent"} to="/about">About</NavLink>
             </ScrollLink>
           </li>
           <li className="px-4 cursor-pointer capitalize font-medium hover:text-gray-400 text-gray-200 hover:scale-105 duration-200">
@@ -75,7 +75,7 @@ const Navbar = () => {
               offset={-150}
               duration={500}
             >
-              <Link className={location.pathname === "/contact" ? "text-white" : "text-gray-400 bg-transparent"} to="/contact">Contact</Link>
+              <NavLink className={location.pathname === "/contact" ? "text-white" : "text-gray-400 bg-transparent"} to="/contact">Contact</NavLink>
             </ScrollLink>
           </li>
         </ul>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
               >
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </ScrollLink>
             </li>
             <li className="px-4 hover:text-gray-400 cursor-pointer capitalize py-6 text-2xl hover:scale-105 duration-200">
@@ -112,7 +112,7 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
               >
-                <Link to="/portfolio">Portfolio</Link>
+                <NavLink to="/portfolio">Portfolio</NavLink>
               </ScrollLink>
             </li>
             <li className="px-4 hover:text-gray-400 cursor-pointer capitalize py-6 text-2xl hover:scale-105 duration-200">
@@ -124,7 +124,7 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
               >
-                <Link to="/skills">Skills</Link>
+                <NavLink to="/skills">Skills</NavLink>
               </ScrollLink>
             </li>
             <li className="px-4 hover:text-gray-400 cursor-pointer capitalize py-6 text-2xl hover:scale-105 duration-200">
@@ -136,7 +136,7 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
               >
-                <Link to="/about">About</Link>
+                <NavLink to="/about">About</NavLink>
               </ScrollLink>
             </li>
             <li className="px-4 hover:text-gray-400 cursor-pointer capitalize py-6 text-2xl hover:scale-105 duration-200">
@@ -148,7 +148,7 @@ const Navbar = () => {
                 offset={-150}
                 duration={500}
               >
-                <Link to="/contact">Contact</Link>
+                <NavLink to="/contact">Contact</NavLink>
               </ScrollLink>
             </li>
           </ul>

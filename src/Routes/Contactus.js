@@ -16,7 +16,7 @@ const Contactus = () => {
     message: message,
   };
   console.log(obj);
-  const sendEmail = (e) => {
+  const sendEmailForMe = (e) => {
     e.preventDefault();
     console.log(document.getElementById("form"));
     emailjs.sendForm('service_pva5clo', 'template_g2seb17', document.getElementById("form"), 'kqkOsIuNbyTVPBMM3')
@@ -83,7 +83,7 @@ const Contactus = () => {
           <div className="flex md:w-1/2 flex-col w-full md:py-8 mt-8 md:mt-0">
             <ToastContainer />
             <Fade right>
-              <form id="form" ref={form} onSubmit={sendEmail()}>
+              <form id="form" ref={form}>
                 <div className="relative mb-4">
                   <label
                     htmlFor="name"
@@ -132,7 +132,7 @@ const Contactus = () => {
                     className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 shadow-md focus:shadow-blue-500 focus:ring-blue-300 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
-                <button className="px-4 border-blue-500 w-full py-2 border-2 text-white text-center rounded text-md hover:bg-transparent bg-blue-500 hover:border-2 hover:border-blue-500">
+                <button  onClick={()=>sendEmailForMe()} className="px-4 border-blue-500 w-full py-2 border-2 text-white text-center rounded text-md hover:bg-transparent bg-blue-500 hover:border-2 hover:border-blue-500">
                   SUBMIT
                 </button>
               </form>
