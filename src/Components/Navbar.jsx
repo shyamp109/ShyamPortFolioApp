@@ -27,7 +27,11 @@ const Navbar = () => {
               duration={500}
             >
               <NavLink
-                className={location.pathname === "/" ? "text-white" : "text-gray-400 bg-transparent"}
+                className={
+                  location.pathname === "/"
+                    ? "text-white"
+                    : "text-gray-400 bg-transparent"
+                }
                 to="/"
               >
                 Home
@@ -42,7 +46,16 @@ const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <NavLink className={location.pathname === "/portfolio" ? "text-white" : "text-gray-400 bg-transparent"} to="/portfolio">Portfolio</NavLink>
+              <NavLink
+                className={
+                  location.pathname === "/portfolio"
+                    ? "text-white"
+                    : "text-gray-400 bg-transparent"
+                }
+                to="/portfolio"
+              >
+                Portfolio
+              </NavLink>
             </ScrollLink>
           </li>
           <li className="px-4 cursor-pointer capitalize font-medium hover:text-gray-400 text-gray-200 hover:scale-105 duration-200">
@@ -53,7 +66,16 @@ const Navbar = () => {
               offset={-150}
               duration={500}
             >
-              <NavLink className={location.pathname === "/skills" ? "text-white" : "text-gray-400 bg-transparent"} to="/skills">Skills</NavLink>
+              <NavLink
+                className={
+                  location.pathname === "/skills"
+                    ? "text-white"
+                    : "text-gray-400 bg-transparent"
+                }
+                to="/skills"
+              >
+                Skills
+              </NavLink>
             </ScrollLink>
           </li>
           <li className="px-4 cursor-pointer capitalize font-medium hover:text-gray-400 text-gray-200 hover:scale-105 duration-200">
@@ -64,7 +86,16 @@ const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <NavLink className={location.pathname === "/about" ? "text-white" : "text-gray-400 bg-transparent"} to="/about">About</NavLink>
+              <NavLink
+                className={
+                  location.pathname === "/about"
+                    ? "text-white"
+                    : "text-gray-400 bg-transparent"
+                }
+                to="/about"
+              >
+                About
+              </NavLink>
             </ScrollLink>
           </li>
           <li className="px-4 cursor-pointer capitalize font-medium hover:text-gray-400 text-gray-200 hover:scale-105 duration-200">
@@ -75,7 +106,16 @@ const Navbar = () => {
               offset={-150}
               duration={500}
             >
-              <NavLink className={location.pathname === "/contact" ? "text-white" : "text-gray-400 bg-transparent"} to="/contact">Contact</NavLink>
+              <NavLink
+                className={
+                  location.pathname === "/contact"
+                    ? "text-white"
+                    : "text-gray-400 bg-transparent"
+                }
+                to="/contact"
+              >
+                Contact
+              </NavLink>
             </ScrollLink>
           </li>
         </ul>
